@@ -6,11 +6,15 @@
     remote_user: root
   tasks: 
   - name: ensure libselinux-python is installed before apache is installed
-    command: rpm -q libselinux-python
+    shell: if rpm -q libselinux-python > /dev/null; then echo "installed"; else echo "not_installed"; fi
+    #ignore_errors: true
     register: rpm_check
+  - debug: msg="{{ rpm_check.stdout }}"
   - name: execute script if libselinux-python is not installed
-    command: yum install -y libselinux-python
-    when: rpm_check.stdout.find('is not installed') != -1
+    yum:
+      name: libselinux-python
+      state: latest
+    when: rpm_check.stdout == "not_installed"
   - name: ensure apache is at the latest version
     yum:
       name: httpd
