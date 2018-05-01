@@ -1,0 +1,33 @@
+---
+- hosts: webservers
+  vars:
+    http_port: 80
+    max_clients: 200
+    remote_user: root
+  tasks: 
+  - name: ensure libselinux-python is installed before apache is installed
+    command: rpm -q libselinux-python
+    register: rpm_check
+  - name: execute script if libselinux-python is not installed
+    command: yum install -y libselinux-python
+    when: rpm_check.stdout.find('is not installed') != -1
+  - name: ensure apache is at the latest version
+    yum:
+      name: httpd
+      state: latest
+  - name: replace default index.html
+    template:
+      src: /static_files/index.html
+      dest: /var/www/html/
+    notify:
+    - restart apache
+  - name: ensure apache is running
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+  handlers:
+    - name: restart apache
+      service:
+        name: httpd
+        state: restarted
