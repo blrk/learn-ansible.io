@@ -1,8 +1,7 @@
 # learn-ansible
 
 YAML 
-   <p> it is easier to read and write </p>
-
+   <ul> <li> it is easier to read and write </li></ul>
 YAML Basics
    <p> 
         <ul> 
@@ -12,10 +11,10 @@ YAML Basics
             <li>need to be careful about the white space. it matters!!! </li>
         <ul>
     </p>
-example 1
+<p> <b> example 1 <b> </p>
 
----
-# list of car manufacturers --> this is a comment starts with "#" 
+<span> --- </span>
+<span> # list of car manufacturers --> this is a comment starts with "#" </span>
 cars
   - Maruthi
   - Honda
