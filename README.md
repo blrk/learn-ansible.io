@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
     <style>
         pre {
             display: block;
@@ -11,11 +8,10 @@
             background-color: gray;
         } 
     </style>
-<body>
 #learn-ansible
-YAML 
+<b>YAML</b> 
    <ul> <li> it is easier to read and write </li></ul>
-YAML Basics
+<b>YAML Basics</b>
    <p> 
         <ul> 
             <li> --- shows the begining of YAML anything above that line shout not be parsed as YAML </li>
@@ -50,5 +46,4 @@ YAML Basics
 <div>
     <a href="apache.yml">First apache playbook</a>
 </div>
-</body>
-</html>
+
