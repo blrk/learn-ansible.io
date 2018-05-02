@@ -14,7 +14,7 @@ YAML Basics
 <p> <b> example 1 </b> </p>
 
 <div>
-    <embed src="https://github.com/blrk/learn-ansible/edit/master/yaml-files/example1.html"> </embed>
+    <embed src="/yaml-files/example1.html"> </embed>
 </div>
 <b>example 2 </b>
 
