@@ -1,5 +1,7 @@
 # learn-ansible
-
+<!DOCTYPE html>
+<html>
+<body>
 YAML 
    <ul> <li> it is easier to read and write </li></ul>
 YAML Basics
@@ -26,3 +28,5 @@ YAML Basics
    engine: hybrid
 
 First apache playbook
+</body>
+</html>
