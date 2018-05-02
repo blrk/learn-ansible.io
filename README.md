@@ -26,14 +26,18 @@ YAML Basics
     </pre>
 </div>
 <b>example 2 </b>
-
----
-# type of car model produced by each manufacturers 
-- ciaz
-   colour: red
-   price: 10L
-   engine: hybrid
-
-First apache playbook
+<div>
+    <pre>
+        ---
+        # type of car model produced by each manufacturers 
+        - ciaz
+           colour: red
+           price: 10L
+           engine: hybrid
+    </pre>
+</div>
+<div>
+    <a href="apache.yml">First apache playbook</a>
+</div>
 </body>
 </html>
