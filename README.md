@@ -11,15 +11,16 @@ YAML Basics
             <li>need to be careful about the white space. it matters!!! </li>
         <ul>
     </p>
-<p> <b> example 1 <b> </p>
+<p> <b> example 1 </b> </p>
 
-<span> --- </span>
-<span> # list of car manufacturers --> this is a comment starts with "#" </span>
+<span> 
+--- 
+# list of car manufacturers --> this is a comment starts with "#" </span>
 cars
   - Maruthi
   - Honda
   - Audi
-
+</span>
 example 2 
 
 ---
