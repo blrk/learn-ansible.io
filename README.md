@@ -29,10 +29,12 @@
     <pre>
         ---
         # type of car model produced by each manufacturers 
-        - ciaz
-           colour: red
-           price: 10L
-           engine: hybrid
+        cars
+          - Marthi
+            Model: Ciaz
+            colour: red
+            price: 10L
+            engine: hybrid
     </pre>
 </div>
 <div>
