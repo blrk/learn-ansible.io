@@ -1,6 +1,17 @@
 # learn-ansible
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        pre {
+            display: block;
+            font-family: campriya;
+            white-space: pre;
+            margin: 1em 0;
+            color: rgb(250,250,250);
+            background-color: gray;
+        } 
+    </style>
 <body>
 YAML 
    <ul> <li> it is easier to read and write </li></ul>
