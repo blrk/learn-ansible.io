@@ -13,14 +13,7 @@ YAML Basics
     </p>
 <p> <b> example 1 </b> </p>
 
-<p> 
---- 
-# list of car manufacturers --> this is a comment starts with "#" </span>
-cars
-  - Maruthi
-  - Honda
-  - Audi
-</p>
+<iframe src="yaml-files/example1.yml"></iframe>
 example 2 
 
 ---
