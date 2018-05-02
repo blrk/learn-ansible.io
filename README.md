@@ -13,7 +13,7 @@ YAML Basics
     </p>
 <p> <b> example 1 </b> </p>
 
-<iframe src="yaml-files/example1.yml" height="200" width="300"></iframe>
+<iframe src="https://github.com/blrk/learn-ansible/blob/master/yaml-files/example1.yml" height="200" width="300"></iframe>
 example 2 
 
 ---
