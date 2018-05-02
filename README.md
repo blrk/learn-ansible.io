@@ -1,14 +1,6 @@
-    <style>
-        pre {
-            display: block;
-            font-family: campriya;
-            white-space: pre;
-            margin: 1em 0;
-            color: rgb(250,250,250);
-            background-color: gray;
-        } 
-    </style>
+    
 #learn-ansible
+<br/>
 <b>YAML</b> 
    <ul> <li> it is easier to read and write </li></ul>
 <b>YAML Basics</b>
@@ -34,7 +26,7 @@
 </div>
 <b>example 2 </b>
 <div>
-    <pre>
+    <pre style="display: block;font-family: campriya;white-space: pre;margin: 1em 0;color: rgb(250,250,250);background-color: gray;">
         ---
         # type of car model produced by each manufacturers 
         - ciaz
