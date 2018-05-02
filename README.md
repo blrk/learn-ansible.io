@@ -4,12 +4,14 @@ YAML
    <p> it is easier to read and write </p>
 
 YAML Basics
-   <p> --- --> shows the begining of YAML anything above that line shout not be parsed as YA
-    every item in the list is a list of key/value pairs 
-    commonly known as hash or a dictionary.
-    we should learn how to write list and dictionaries 
-    important 
-        need to be careful about the white space. it matters!!! </p>
+   <p> 
+        <ul> 
+            <li> --- --> shows the begining of YAML anything above that line shout not be parsed as YAML </li>
+            <li> every item in the list is a list of key/value pairs, commonly known as hash or a dictionary </li>
+            <li>we should learn how to write list and dictionaries </li>
+            <li>need to be careful about the white space. it matters!!! </li>
+        <ul>
+    </p>
 example 1
 
 ---
