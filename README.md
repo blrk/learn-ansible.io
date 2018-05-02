@@ -1,15 +1,15 @@
 # learn-ansible
 
 YAML 
-    it is easier to read and write
+   <p> it is easier to read and write </p>
 
 YAML Basics
-    --- --> shows the begining of YAML anything above that line shout not be parsed as YA
+   <p> --- --> shows the begining of YAML anything above that line shout not be parsed as YA
     every item in the list is a list of key/value pairs 
     commonly known as hash or a dictionary.
     we should learn how to write list and dictionaries 
     important 
-        need to be careful about the white space. it matters!!!
+        need to be careful about the white space. it matters!!! </p>
 example 1
 
 ---
