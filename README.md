@@ -1,5 +1,5 @@
     
-#learn-ansible
+<h2>learn-ansible</h2>
 <br/>
 <b>YAML</b> 
    <ul> <li> it is easier to read and write </li></ul>
@@ -26,7 +26,7 @@
 </div>
 <b>example 2 </b>
 <div>
-    <pre style="display: block;font-family: campriya;white-space: pre;margin: 1em 0;color: rgb(250,250,250);background-color: gray;">
+    <pre>
         ---
         # type of car model produced by each manufacturers 
         - ciaz
