@@ -70,7 +70,9 @@
         ansible -m ping all 
         # ping a single node
         ansible -m ping webserver1
-        # output
+    </pre>
+    <pre>
+        # output of single node ping
         webserver1 | SUCCESS => {
             "changed": false, 
             "ping": "pong"
