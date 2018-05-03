@@ -95,7 +95,7 @@
 </div>
 <div>
     <p><b>Simple playbook to install apache webserver</b></p>
-    <a href="apache.yml">First apache playbook</a>
+    <a href="apache.yml">First apache playbook</a><hr>
     <b> Check the syntax of the playbook before playing</b>
     <pre>
         ansible-playbook --syntax-check /etc/ansible/playbooks/apache.yml         
