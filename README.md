@@ -57,7 +57,7 @@
         [webservers] # webserver group 
         webserver1 ansible_ssh_host=192.168.100.160
         webserver2 ansible_ssh_host=192.168.100.161
-        #webserver3.example.com 
+        webserver3.example.com 
         192.168.100.162        
         #create your ungrouped hosts like this
         ftpserver1.example.com
@@ -67,6 +67,7 @@
     <pre>
         # it will ping all the nodes
         # Note it is not the network ping
+            # -m module name
         ansible -m ping all 
         # ping a single node
         ansible -m ping webserver1
@@ -77,9 +78,20 @@
             "changed": false, 
             "ping": "pong"
         }
+    </pre>    
+</div>
+<div>
+    <h2>Gathering Facts</h2> 
+    <pre>
+        ansible webserver1 -m setup
+        # extract the facts form webserver1
     </pre>
 </div>
 <div>
+    <p>Simple playbook to install apache webserver</p>
     <a href="apache.yml">First apache playbook</a>
+    <p>Note: Sometimes above palybook will not install apache if there is a libselinux-python package dependency if you have a minimal installation of Centos7</p>
+    <p>Simple playbook to install apache webserver by checking the dependency</p>
+    <a href="apache1.yml">First apache playbook with dependency checking</a>
 </div>
 
