@@ -72,9 +72,14 @@
         # ping a single node
         ansible -m ping webserver1
     </pre>
+    <h2> List all the modules </h2>
+    <pre>
+        ansible-doc -l # list all the available modules in the system
+        ansible-doc -l | grep copy # search a particular module
+        ansible-doc copy # provide the complete sysntax and examples
+    </pre>
     <pre>
         # output of single node ping
-        webserver1 | SUCCESS => {
             "changed": false, 
             "ping": "pong"
         }
@@ -82,16 +87,25 @@
 </div>
 <div>
     <h2>Gathering Facts</h2> 
+        webserver1 | SUCCESS => {
     <pre>
         ansible webserver1 -m setup
         # extract the facts form webserver1
     </pre>
 </div>
 <div>
-    <p>Simple playbook to install apache webserver</p>
+    <p><b>Simple playbook to install apache webserver</b></p>
     <a href="apache.yml">First apache playbook</a>
+    <b> Check the syntax of the playbook before playing</b>
+    <pre>
+        ansible-playbook --syntax-check /etc/ansible/playbooks/apache.yml         
+    </pre>
+    <b> Run a playbook</b>
+    <pre>
+        ansible-playbook apache.yml
+    </pre>
     <p>Note: Sometimes above palybook will not install apache if there is a libselinux-python package dependency if you have a minimal installation of Centos7</p>
-    <p>Simple playbook to install apache webserver by checking the dependency</p>
+    <p><b>Simple playbook to install apache webserver by checking the dependency</b></p>
     <a href="apache1.yml">First apache playbook with dependency checking</a>
 </div>
 
