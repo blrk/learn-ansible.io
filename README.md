@@ -58,11 +58,23 @@
         webserver1 ansible_ssh_host=192.168.100.160
         webserver2 ansible_ssh_host=192.168.100.161
         #webserver3.example.com 
-        192.168.100.162
-        
+        192.168.100.162        
         #create your ungrouped hosts like this
         ftpserver1.example.com
         192.168.100.163
+    </pre>
+    <h2> Check the connectivity with the hosts </h2>
+    <pre>
+        # it will ping all the nodes
+        # Note it is not the network ping
+        ansible -m ping all 
+        # ping a single node
+        ansible -m ping webserver1
+        # output
+        webserver1 | SUCCESS => {
+            "changed": false, 
+            "ping": "pong"
+        }
     </pre>
 </div>
 <div>
