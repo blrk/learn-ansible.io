@@ -36,6 +36,34 @@
             price: 10L
             engine: hybrid
     </pre>
+</div
+<div>
+    <h2> Install Ansibe in Centos 7 </h2>
+    <pre>
+        yum install -y epel-release
+        yum install -y ansible
+    </pre>
+    <h2> Check the version of the Ansible </h2>
+    <pre>
+        ansible --version
+    </pre>
+    <h2> Create and add host key to enable password less login</h2>
+    <pre>
+        ssh-keygen -t rsa -b 4096
+        ssh-copy-id root@192.168.100.160 # replace the ip with your own ip
+    </pre>
+    <h2> Configure the host file in /etc/ansible/hosts </h2>
+    <pre>
+        [webservers] # webserver group 
+        webserver1 ansible_ssh_host=192.168.100.160
+        webserver2 ansible_ssh_host=192.168.100.161
+        #webserver3.example.com 
+        192.168.100.162
+        
+        #create your ungrouped hosts like this
+        ftpserver1.example.com
+        192.168.100.163
+    </pre>
 </div>
 <div>
     <a href="apache.yml">First apache playbook</a>
