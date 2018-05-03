@@ -72,22 +72,22 @@
         # ping a single node
         ansible -m ping webserver1
     </pre>
+    <pre>
+        # output of single node ping
+        webserver1 | SUCCESS => {
+            "changed": false, 
+            "ping": "pong"
+        }
+    </pre> 
     <h2> List all the modules </h2>
     <pre>
         ansible-doc -l # list all the available modules in the system
         ansible-doc -l | grep copy # search a particular module
         ansible-doc copy # provide the complete sysntax and examples
-    </pre>
-    <pre>
-        # output of single node ping
-            "changed": false, 
-            "ping": "pong"
-        }
-    </pre>    
+    </pre>       
 </div>
 <div>
-    <h2>Gathering Facts</h2> 
-        webserver1 | SUCCESS => {
+    <h2>Gathering Facts</h2>         
     <pre>
         ansible webserver1 -m setup
         # extract the facts form webserver1
