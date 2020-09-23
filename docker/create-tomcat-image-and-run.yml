@@ -1,7 +1,7 @@
 ---
 - hosts: all
 
-- tasks:
+  tasks:
   - name: build tomcat image to deploy a  war file
     command: docker build -t DevOps-website-image .
     args:
