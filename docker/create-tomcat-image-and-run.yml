@@ -3,8 +3,8 @@
 
   tasks:
   - name: build tomcat image to deploy a  war file
-    command: docker build -t DevOps-website-image .
+    command: docker build -t devops-website-image .
     args:
       chdir: /opt/docker
   - name: create container using the above created image
-    command: docker run -d --name devops-website -p 8080:8080 DevOps-website-image  
+    command: docker run -d --name devops-website -p 8080:8080 devops-website-image  
